@@ -10,7 +10,7 @@ public class Animal {
         else if(age < 13 && age >= 0){
             return "Ребенок";//
         }else{
-            return "Отрицательный возраст не может быть";
+            return "Введены некорректные данные";
         }
     }
 
