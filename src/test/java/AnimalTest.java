@@ -17,6 +17,8 @@ public class AnimalTest {
         pry.add((66));
         pry.add((69));
         pry.add((0));
+        pry.add((-1));
+        pry.add((-10));
         Animal cat = new Animal();
 
         pry.forEach(run -> {
@@ -30,10 +32,13 @@ public class AnimalTest {
         }else  if (run >= 65){
             assertTrue(category == "Пожилой");
             System.out.println("Вывод Пожилой: " + run);
-        }else {
+        }else if(run < 13 && run >= 0) {
                 assertTrue(category == "Ребенок");
             System.out.println("Вывод Ребнок: " + run);
-    }
+    }else {
+            assertTrue(category == "Отрицательный возраст не может быть");
+            System.out.println("Отрицательный возраст не может быть: " + run);
+        }
         });
 
 
