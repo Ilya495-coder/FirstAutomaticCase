@@ -36,8 +36,8 @@ public class AnimalTest {
                 assertTrue(category == "Ребенок");
             System.out.println("Вывод Ребнок: " + run);
     }else {
-            assertTrue(category == "Отрицательный возраст не может быть");
-            System.out.println("Отрицательный возраст не может быть: " + run);
+            assertTrue(category == "Введены некорректные данные");
+            System.out.println("Введены некорректные данные: " + run);
         }
         });
 
