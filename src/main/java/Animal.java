@@ -6,8 +6,11 @@ public class Animal {
             return "Подросток";
         }else if(age >= 65){
             return "Пожилой";
-        }else{
+        }
+        else if(age < 13 && age >= 0){
             return "Ребенок";//
+        }else{
+            return "Отрицательный возраст не может быть";
         }
     }
 
